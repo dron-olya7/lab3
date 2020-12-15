@@ -1,0 +1,21 @@
+public class lesson9 {
+
+	public static void main(String[] args) {
+		int[] a;
+		int n;
+		Scanner in = new Scanner(System.in);
+		System.out.print("Введите количество цифр в массиве:");
+		n = in.nextInt();
+		a = new int [n];
+		for (int i = 0; i < n; i++) {
+			System.out.print("Enter a[" + i +"] = ");
+			System.out.print("Enter a[" + i +"] = ");
+			a[i] = in.nextInt();
+			
+			 int min = Collections.min(Arrays.asList(a));
+			 int max = Collections.max(Arrays.asList(a));
+			 if (min < max)
+				 System.out.println(min+""+max+"");
+}
+	}
+}
